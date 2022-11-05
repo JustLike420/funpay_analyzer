@@ -10,6 +10,11 @@ from rest_framework.views import APIView
 class OfferViewSet(viewsets.ModelViewSet):
     queryset = Offer.objects.all()
     serializer_class = OfferSerializer
+
+
+class SellerViewSet(viewsets.ModelViewSet):
+    queryset = Seller.objects.all()
+    serializer_class = SellerSerializer
 # class SellerViewSet()
 # class OfferAPIView(generics.ListAPIView):
 #     queryset = Offer.objects.all()
