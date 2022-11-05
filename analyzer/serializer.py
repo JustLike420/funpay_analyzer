@@ -10,7 +10,7 @@ class SellerSerializer(serializers.ModelSerializer):
 
 
 class OfferSerializer(serializers.ModelSerializer):
-    seller = SellerSerializer()
+    # seller = SellerSerializer()
 
     class Meta:
         model = Offer
