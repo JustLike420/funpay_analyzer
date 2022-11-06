@@ -54,6 +54,5 @@ def parse_view(request):
 
 @api_view(['GET'])
 def delete_offers(request):
-    Offer.objects.all().delete()
-    s = 1
-    return Response('ok')
+    s = Offer.objects.all().delete()
+    return Response({"delete_all": s[0]})
